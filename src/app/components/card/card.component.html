@@ -1,0 +1,22 @@
+<div class="card-columns m-5 animated fadeIn">
+    <div *ngFor="let item of items" class="card puntero">
+      <img [src]="item.url_photo" class="card-img-top" alt="{{ item.name }}">
+      <div class="card-body">
+        <h5 class="card-title">
+            {{ item.name }} de {{ item.constellation }}
+        </h5>
+        <ul>
+            <li>1° Habilidad: {{item.hability1}}</li>
+            <li>2° Habilidad: {{item.hability2}}</li>
+            <li>3° Habilidad: {{item.hability3}}</li>
+            <li>4° Habilidad: {{item.hability4}}</li>
+        </ul>
+        <div class="card-text">
+            <h2>Dios: <span class="badge badge-secondary">{{ item.god.name }}</span></h2>
+        </div>
+        <div class="card-text">
+            <h2>Armadura: <span class="badge badge-primary">{{ item.armor.nameArmor }}</span></h2>
+        </div>
+      </div>
+</div>
+</div>
